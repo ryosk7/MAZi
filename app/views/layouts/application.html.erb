@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>MAZi</title>
-    <%= csrf_meta_tags %>
+  <html>
+    <head>
+      <title>DeviseRails5</title>
+      <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+      <%= yield %>
+
+    </body>
+  </html>
